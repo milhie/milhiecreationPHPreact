@@ -1,0 +1,237 @@
+
+
+
+/****************************************************************
+            Definition de content (éléments principaux de la page d'accueil: images et textes de la page )
+            *************************************************************************/
+            .content
+            {
+                flex:3;
+                margin: 1em;
+            }
+                .content p
+                {
+                    font-size: 1.5em;
+                    text-align: center;
+                }
+
+                .content h2
+                {
+                    font-size: 2em;
+                    text-align: center;
+                }
+                .content #bijoux
+                {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .content nav
+                {
+                    display: flex;
+                    flex-direction: row;
+                }
+                    .content nav ul 
+                    {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        padding: 0;
+                    }
+                        nav ul .item
+                        {
+
+                            list-style: none;
+                            border: solid black;
+                            border-radius: 5px;
+                            margin: 15px;  
+                            width: 20em;
+                            height: 25em;  
+                            background-size: cover;   
+
+                        }
+                            .content .item p
+                            {
+                                position: relative;
+                                top: 70%;     
+                            }
+
+                            .content .item a
+                            {
+                                color: white;
+                                background: linear-gradient(#e66465,
+#481111);
+                                border-radius: 5px;
+                                padding: 0.5em;
+                            }
+                            .content .item a:hover
+                            {
+                                background: #333;
+
+                            }
+
+
+
+        
+    
+
+
+.item#bijoux
+{
+    background: url(images/bague.jpeg) center no-repeat;
+}
+.item#arbres_de_vie
+{
+    background: url(images/arbres/arbre01.jpeg) center no-repeat;
+}
+
+.item#decorations_murales_chambre_enfant
+{
+    background: url(images/deco_tymeo.jpeg) center no-repeat;
+}
+.item#decos_mariage
+{
+    background: url(images/decos_mariage.jpeg) center no-repeat;
+}
+.item#pieges_reves
+{
+    background: url(images/piege.jpeg) center no-repeat;
+}
+
+.item#autresDecos
+{
+    background: url(images/autres.jpeg) center no-repeat;
+}
+
+#index .item
+{
+    background-size: cover;
+}
+
+/********************************************************************
+BIJOUX.PHP
+********************************************************************/
+
+#bracelets_manchettes
+{
+    background: url(images/bracelet259px.jpeg) center no-repeat;    
+}
+
+#bagues
+{   
+    background: url(images/bague259px.jpeg) center no-repeat;   
+}
+
+#boucles
+{   
+    background: url(images/boucles.jpeg) center no-repeat;
+}
+
+#bijoux_mariage
+{   
+    background: url(images/bijoux_mariage366.jpeg) center no-repeat;
+}
+
+#colliers
+{   
+    background: url(images/collier.jpeg) center no-repeat;
+}
+
+#pendentifs
+{
+    background: url(images/pendentifs.jpeg) center no-repeat;
+}
+
+#bjx .item
+{
+    background-size: cover;
+}
+/************************************************************
+TABLETTE
+*************************************************************/
+@media (min-width: 1024px) {
+    #element
+    {
+        position: absolute;
+    }
+    #main
+    {
+        
+    }
+    
+    #element 
+    {
+    }
+
+
+}
+
+@media (max-width: 1281px) {
+
+        #element nav
+        {
+            width: min-content;
+        }
+
+}
+/*******************************************************************
+DESKTOP
+********************************************************************/
+@media (min-width: 1281px) {
+
+    .content p
+    {
+        font-size: 1.4em;
+    }
+    .content h2
+    {
+        text-align: left;
+    }
+
+}
+
+/*****************************************************************
+SMARTPHONE
+*****************************************************************/
+@media (max-width: 1024px) {    
+    .content .epingle
+    {
+        
+    }
+        .content .epingle img
+        {
+        }
+    .content h2
+    {
+        font-size: 3em;
+    }
+    .content p
+    {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    nav ul .item
+    {                
+        height: calc(35vh + 35vw);
+        width: calc(35vh + 35vw);   
+    }
+    .content .item a
+    {
+        font-size: 1.2em;
+    }
+
+    .fleche
+    {
+        height: 0.5em;
+    }
+    #element
+    {
+        background: none;
+    }
+    #main
+    {
+        top: 11em;
+    }
+    
+
+
+}

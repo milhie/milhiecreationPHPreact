@@ -1,0 +1,521 @@
+@font-face {
+    font-family: 'calligraffitiregular';
+    src: url('polices_milhiecreation/calligraffiti-webfont.eot');
+    src: url('polices_milhiecreation/calligraffiti-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices_milhiecreation/calligraffiti-webfont.woff2') format('woff2'),
+         url('polices_milhiecreation/calligraffiti-webfont.woff') format('woff'),
+         url('polices_milhiecreation/calligraffiti-webfont.ttf') format('truetype'),
+         url('polices_milhiecreation/calligraffiti-webfont.svg#calligraffitiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face
+{
+    font-family: 'sf_burlington_scriptregular';
+    src: url('polices_milhiecreation/sf_burlington_script-webfont.eot');
+    src: url('polices_milhiecreation/sf_burlington_script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices_milhiecreation/sf_burlington_script-webfont.woff2') format('woff2'),
+         url('polices_milhiecreation/sf_burlington_script-webfont.woff') format('woff'),
+         url('polices_milhiecreation/sf_burlington_script-webfont.ttf') format('truetype'),
+         url('polices_milhiecreation/sf_burlington_script-webfont.svg#sf_burlington_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bpscriptregular';
+    src: url('polices_milhiecreation/bpscript-webfont.eot');
+    src: url('polices_milhiecreation/bpscript-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices_milhiecreation/bpscript-webfont.woff2') format('woff2'),
+         url('polices_milhiecreation/bpscript-webfont.woff') format('woff'),
+         url('polices_milhiecreation/bpscript-webfont.ttf') format('truetype'),
+         url('polices_milhiecreation/bpscript-webfont.svg#bpscriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('polices_milhiecreation/alexbrush-regular-webfont.eot');
+    src: url('polices_milhiecreation/alexbrush-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices_milhiecreation/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('polices_milhiecreation/alexbrush-regular-webfont.woff') format('woff'),
+         url('polices_milhiecreation/alexbrush-regular-webfont.ttf') format('truetype'),
+         url('polices_milhiecreation/alexbrush-regular-webfont.svg#alex_brushregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body
+{
+    width: auto;
+    background: url('images/fond_jaune.png');
+    font-family: 'sf_burlington_scriptregular', Arial, sans-serif;
+    color: #181818;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+body a
+{
+    z-index: 900;
+}
+
+body p
+{
+        line-height: 150%;
+
+}
+    #page
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width:100%;
+        height: 100%;/*hauteur maximale de ma page*/
+        padding: 0;
+    }
+
+        /***********************************************************************
+        Définition hauteur de chaque box (titre ,menu(nav), main et footer)*****
+        ************************************************************************/
+        #element {
+            position: fixed;
+            z-index: 1000;
+            width:100%;
+            top:0;
+       
+
+
+        }
+
+            #title /*header*/
+            {
+                width: 90%;
+                margin: auto;
+                
+                top: 0;
+                background: url('images/fond_jaune.png');
+                z-index: 1000;
+                display: flex;
+                position: relative;
+                padding: 0;
+                
+            }
+                #principal
+                {
+                    width: 100%;
+                    margin-bottom: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    font-family: 'alex_brushregular', serif;
+                    font-weight: normal;
+                    border-radius: 0.5em;
+                    box-shadow: 0px 2px 4px #1c1a19;
+                }
+                    #principal h1
+                    {
+                        font-size: 5em;
+                    }
+                    #principal h2
+                    {
+                        position: absolute;
+                        font-size: 1.9em;
+                        bottom: 0;
+                        right:30%;
+                    }
+                    #logo
+                    {
+                        width: 100%;
+                        display: flex;
+                        margin: 0.5em;
+                    }  
+    
+    
+                        #logo img
+                        {
+                            height: 10em;
+                            float: left;
+                        }
+                        #logo h1
+                        {
+                            margin-top: auto;
+                            margin-bottom: auto;
+                        }
+                        #logo p, #logo h1
+                        {
+                        }
+                        #logo a
+                        {
+                            text-decoration: none;
+                            color: inherit;
+                        }
+       
+        /**********************************************************************
+        Définition de main
+        **********************************************************************/
+        #main
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            position: relative;
+            top: 12em;
+            width: 90%;
+            left:0;
+            padding: 1em;
+            margin-top: 2em;
+        }
+
+            #main .titre
+            {
+                display: none;
+            }
+            
+/*********************************************************************
+        Definition de footer
+        **********************************************************************/
+        footer
+        {
+            position: relative;
+            top: 10em;
+            width: 90%;
+            left: 0;
+            margin: auto;
+        }
+
+        footer a
+        {
+            color: #181818;
+            padding-bottom: 3px;
+            text-decoration: none;
+            font-size: 1.3em;
+            
+        }
+
+
+        footer a:hover
+        {
+            color: #760001;
+            border-bottom: 3px solid #760001;
+        }
+
+        
+        footer h1
+        {
+            text-decoration: underline;
+            font-size: 1.2em;
+        }
+
+        footer #up
+        {
+        text-align: center;
+        background:  url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+        }
+/**************************************************************
+            footerContent
+            ***************************************************************/
+        footer #footerContent
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 1em;
+
+        }        
+
+            
+            #footerContent ul li
+            {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #acheter
+            {
+                display: flex;
+            }
+
+                #ou_acheter ul
+                {
+                    display: flex;
+                    flex-direction: column;
+                    list-style:none;
+                    padding: 0;
+                    margin: auto;
+                }
+
+                #ou_acheter h1, #ma_page_facebook h1
+                {
+                    text-align: center;
+                }
+
+                #contact, #ma_page_facebook, #ou_acheter, #moi
+                {
+                    border: solid black 1px;
+                    padding: 1em;
+                    height: min-content;
+                    margin: 1em;
+                    box-shadow: 8px 8px 12px #aaa;
+                }
+
+
+                #moi {
+                    position:relative;
+               }
+    
+                #moi:hover {
+                    background: none;
+                    z-index: 50;
+                }
+    
+                #moi #bulle 
+                {
+                    display: none;
+                }
+            
+                            
+                            
+
+                    
+        
+        
+/************************************************************
+TABLETTE
+*************************************************************/
+@media (min-width: 1024px) {
+    #element
+    {
+        position: absolute;
+    }
+    #main
+    {
+        top: 10em;
+        /*background: yellow;*/
+        left:18em;
+        padding-right: 20em;
+        width: auto;
+    }
+    
+    #element 
+    {
+        height: 0;
+    }
+        
+    
+    
+
+}
+
+@media (max-width: 1281px) {
+    #element nav
+        {
+            width: min-content;
+        }
+
+    footer h1
+    {
+        font-size: 2.7em;
+    }
+    footer #ou_acheter a 
+    {
+        font-size: 1.9em;
+    }
+    footer #ou_acheter img
+    {
+        height:1.9em;
+    }
+    footer #footerContent
+        {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 1em;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        footer #footerContent #ou_acheter ul
+        {
+            list-style: none;
+
+        }
+
+        footer #footerContent #ou_acheter #acheter
+        {
+            justify-content: center;
+        }        
+}
+/*******************************************************************
+DESKTOP
+********************************************************************/
+@media (min-width: 1281px) {
+
+    #main
+    {
+        top:21em;
+        left: 0;
+        width:auto;
+        /*background: orange;*/
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    #element
+    {
+        height: auto;    
+    }
+    #logo img 
+    {
+
+        height: 6em;
+    }
+
+    #principal h1 
+    {
+
+    font-size: 3em;
+    }
+    footer
+    {
+        top: 21em;
+    }   
+    
+
+    #moi:hover #bulle 
+    {
+        display: block;
+        position: absolute;
+        left: 100%;
+        bottom:-2em;
+    }
+
+        #bulle 
+        {
+            width: 250%;
+            position: relative;
+            background-color: #706b64;
+            box-shadow: 0px 2px 5px #1c1a19;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            font-size: 1.1em;
+        }
+            #bulle a
+            {
+                color: white;
+                text-decoration: underline;
+            }
+            #bulle a:hover
+            {
+                color: #760001;
+                border-bottom: 3px solid #760001;
+            }
+
+                #bulle #fleche_bulle
+                {
+                    position: absolute;
+                    bottom: 2em;
+                    left: -12px;
+                }
+                
+                #bulle #photo_profil
+                {
+                    text-align: center;
+                }
+
+                    #bulle #photo_profil img
+                {
+                    border: 1px solid #181818;
+                }
+
+
+                #bulle img
+                {
+                    margin-right: 5px;
+                }
+
+/*****************************************************************
+SMARTPHONE
+*****************************************************************/
+@media (max-width: 1024px) {    
+    .content .epingle
+    {
+        font-size: 3em;
+        text-align: center;
+        border-bottom: solid black;
+    }
+
+        .content .epingle img
+        {
+            height: 1.2em;
+        }
+
+    .content p
+    {
+        font-size: 2em;
+        text-align: center;
+    }
+    nav ul .item
+    {                
+        height: calc(35vh + 35vw);
+        width: calc(35vh + 35vw);   
+    }
+    .content .item a
+    {
+        font-size: 1.5em;
+    }
+    
+
+    .fleche
+    {
+        height: 0.5em;
+    }
+    #element
+    {
+        background: none;
+    }
+    #main
+    {
+        top: 11em;
+    }
+    
+        footer h1
+        {
+            font-size: 2em;
+        }
+        footer p
+        {
+            font-size: 1.5em;
+        }
+        footer a
+        {
+            position: relative;
+            top: -0.5em;
+        }
+
+        #moi 
+        {
+            position:relative;
+        }
+    
+        #moi:hover 
+        {
+            background: none;
+            z-index: 50;
+        }
+    
+        #moi #bulle 
+        {
+            display: none;
+        } 
+
+}
